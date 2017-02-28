@@ -6,6 +6,20 @@
 			<meta charset="utf-8">
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 			<script src="cv.js"></script>
+			<script language="javascript" type="text/javascript">
+		function validation() {
+  			var contenu_email = $("#email").val();
+							
+  			valider_email(contenu_email);
+		}
+					
+		function valider_email(email){
+  //vérifier que l'email contient le caractère @
+  //si ce n'est pas le cas afficher une alerte.
+			console.log(email);
+		}
+       	
+			</script>
 			
 		</head>
 		<body>
@@ -87,11 +101,11 @@
 <h2 >Contact</h2>
 
 <form>
-  	<input type="text" name="nom" />
-	<input type="text" name="prenom" />
-	<input type="text" name="email" />
-	<input type="text" name="telephone" />
-	<input type="text" name="message" />
+  	<input id="nom" type="text" name="nom" />
+	<input id="prenom" type="text" name="prenom" />
+	<input id="email "type="text" name="email" />
+	<input id="telephone "type="text" name="telephone" />
+	<input id="message" type="text" name="message" />
  <button style="font-size: 50%;" onclick="afficher('#Formation');">submite</button>
 </form>
 		</body>
